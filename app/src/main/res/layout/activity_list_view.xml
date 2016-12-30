@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_list_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jimmysun.androidheroes.chapter4.ListViewActivity">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="添加"/>
+
+    <com.jimmysun.androidheroes.chapter4.MyListView
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:layout_above="@id/btn_add"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_view"
+        android:src="@drawable/ic_launcher"
+        android:layout_above="@id/btn_add"
+        android:contentDescription="@string/app_name"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_light" />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:scrollbars="none"
+    tools:context="com.jimmysun.androidheroes.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="自定义 View"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="ListView 使用技巧"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="Android Scroll 分析"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_draw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="Android 绘图机制与处理技巧"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="Android 动画机制与使用技巧"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_performance_optimize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="Android 性能优化"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_bmob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="搭建云端服务器"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_androidl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector"
+            android:text="Android 5.X 新特性详解"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</ScrollView>

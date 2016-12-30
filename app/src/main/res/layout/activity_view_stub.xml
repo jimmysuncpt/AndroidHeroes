@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_view_stub"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jimmysun.androidheroes.chapter10.ViewStubActivity">
+
+    <Button
+        android:id="@+id/btn_visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visible"/>
+
+    <Button
+        android:id="@+id/btn_inflate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_visible"
+        android:layout_toEndOf="@id/btn_visible"
+        android:text="Inflate"/>
+
+    <ViewStub
+        android:id="@+id/vs_not_often_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout="@layout/not_often_use"/>
+
+</RelativeLayout>
